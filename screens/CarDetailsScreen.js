@@ -31,6 +31,7 @@ const CarDetailsScreen = ({ route,navigation }) => {
     })
     }, [id, navigation])
   
+
   return (
     <ScrollView style={styles.container}>
       <Image source={{ uri: imageUrl }} style={styles.image} />

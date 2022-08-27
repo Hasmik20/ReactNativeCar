@@ -28,7 +28,7 @@ const CarsDisplay = ({selectedItem}) => {
         })
       }
    }
-    return <CarItem {...item} onPress={addDetailHandler} likedHandler={ likedHandler} />
+    return <CarItem {...item} onPress={addDetailHandler} likedHandler={ likedHandler}  />
   }
   
   const filteredCars = cars.filter(item => item.marka.toLocaleLowerCase() === selectedItem)

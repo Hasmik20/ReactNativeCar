@@ -4,12 +4,14 @@ import { Ionicons } from '@expo/vector-icons';
 
 
 
-const Button = ({name,action}) => {
+const Button = ({name,action, style, onPress}) => {
   return (
-    <View  style={styles.container}>
-      <Pressable style={({pressed}) => [styles.innerContainer, pressed && styles.pressed]}>
+    <View  style={[styles.container]}>
+      <Pressable style={({ pressed }) => [styles.innerContainer, pressed && styles.pressed]}
+       onPress={onPress}
+      >
         <Ionicons name={name} size={24} color="white" />
-        <Text style={styles.text}>{action }</Text>
+        <Text style={[styles.text,style]}>{action }</Text>
       </Pressable>
     </View>
   )

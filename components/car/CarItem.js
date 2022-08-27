@@ -17,7 +17,7 @@ const CarItem = ({ id,
    address,
     isLiked,likedHandler, onPress}) => {
   return (
-    <View style={[styles.container, ]}>
+    <View style={styles.container}>
       <Pressable style={({pressed}) => [styles.btn, pressed ? styles.pressed :null]} onPress={onPress}>
         <Image style={styles.img} source={{uri:imageUrl}} />
           <View>
@@ -58,8 +58,11 @@ const styles = StyleSheet.create({
   img: {
     width: 150,
     height: 125,
-    borderRadius: 12,
-    marginRight:10,
+    marginRight: 10,
+    borderTopRightRadius: 1,
+    borderTopLeftRadius: 10,
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius:1,
   },
   title: {
     fontSize:16,

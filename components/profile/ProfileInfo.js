@@ -14,7 +14,7 @@ const ProfileInfo = () => {
           <Text style={[styles.text, styles.active]}>Active</Text>
           <Text style={styles.text}>Inactive</Text>
         </View>
-          <CarsDisplay />
+        <CarsDisplay  />
       </View>
     </View>
   )
@@ -39,5 +39,6 @@ const styles = StyleSheet.create({
   active: {
     borderBottomColor: GlobalStyles.color.green100,
     borderBottomWidth:4
-  }
+  },
+
 })
