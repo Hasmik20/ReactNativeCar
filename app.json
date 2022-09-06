@@ -7,7 +7,7 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/mainImg.png",
+      "image": "./assets/carRent.jpg",
       "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
